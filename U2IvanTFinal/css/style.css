@@ -1,0 +1,165 @@
+@font-face {
+    font-family: fk;
+    src: url(i_fink_u_freeky.ttf);
+}
+
+body{
+    font-family: "Arial Black";
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(32, 32, 32) 0%, rgba(255,255,255,1) 100%)
+}
+
+
+
+h1 {
+    font-family: fk;
+    font-weight: normal;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: fk;
+    font-weight: normal;
+    font-size: 35px;
+    text-shadow: 2px 2px lightcoral;
+}
+
+h3 {
+    font-family: fk;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+img#cabecera {
+    width: 100%;
+
+}
+
+map#mapa{
+    width: 100%;
+}
+
+img#mapa{
+    width: 100%;
+}
+
+nav{
+    font-family: fk;
+    font-size: 35px;
+    padding: 20px;
+    background-color: black;
+    vertical-align: middle;
+}
+
+img#logo{
+    width: 150px;
+    margin-right: 20px;
+}
+
+section.principal { 
+    float: left;
+    width: 70%;
+    margin-left: 15px;
+}
+
+footer {
+    clear: both;
+}
+
+a{
+    color: red;
+}
+
+a:active{
+    color: violet;
+}
+
+a:hover{
+    color: lightcoral;
+}
+
+a:visited{
+    color: darkmagenta;
+}
+
+img.imagenesmain {
+    border: 5px solid white;
+}
+img.imagenesalbum {
+    border: 5px solid white;
+}
+img.socialicon {
+    width: 100px;
+}
+
+time[datetime]:hover{
+    color: lightcoral;
+}
+
+span.duration{
+    color: lightcoral;
+}
+
+pre{
+    font-family: "Arial Black";
+}
+
+aside {
+    float: left;
+    margin-top: 20px;
+}
+
+.duracion{
+    font-style: italic;
+}
+
+table{
+    text-align: left;
+}
+
+.album{
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.fondoesp{
+    background-image: url(../imagenes/conciertosbackground/ciudad.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+
+}
+
+/* CSS GRID */
+@media screen and (min-width:750px) {
+.rejilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: px;
+    text-align: center;
+}
+    
+.yol { grid-area: 1 / 1 / 2 / 2;}
+.ninja { grid-area: 1 / 2 / 2 / 3; }
+.hitek { grid-area: 1 / 3 / 2 / 4; }
+}
+
+@media screen and (max-width:750px) {
+    .rejilla {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: px;
+        text-align: center;
+        }
+        
+        .yol { grid-area: 1 / 1 / 2 / 3; }
+        .ninja { grid-area: 1 / 3 / 2 / 5; }
+        .hitek { grid-area: 2 / 2 / 3 / 4; }
+} 
